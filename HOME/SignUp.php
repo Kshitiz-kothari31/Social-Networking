@@ -42,7 +42,7 @@
         //Checking connection.
         if( !$conn ){
             die("Sorry we failed to connect : ".mysqli_connect_error());
-        }
+        } 
 
         if( $_SERVER["REQUEST_METHOD"] == "POST"){
             $Fname = $_POST['Fname'];
