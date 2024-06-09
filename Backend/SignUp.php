@@ -13,11 +13,20 @@
     }
 
     if( $_SERVER["REQUEST_METHOD"] == "POST"){
-        $U_Name = $_POST['username'];
-        $P_Word = $_POST['password'];
-        $RememberMe = $_POST['check'];
+        $Fname = $_POST['Fname'];
+        $Lname = $_POST['Lname'];
+        $Email = $_POST['Email'];
+        $Pnumber = $_POST['Pnumber'];
+        $RememberMe = $_POST['Check'];
+        $Password;  
+        
+        if( $_POST['Password'] == $_POST['Cpassword'] ){
+            $Password = $_POST['Password'];
+        }
 
-        $sql = "INSERT INTO `userdata`( `UserName`,  `Password`) VALUES ('$U_Name', '$P_Word')";
+        $sql = "INSERT INTO `Users data`( `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Password`) 
+            VALUES ('$Fname', '$Lname', '$Email', '$Pnumber', '$Password')";
+            
         if(mysqli_query($conn, $sql))
         {
             mysqli_close($conn);
