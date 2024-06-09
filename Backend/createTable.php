@@ -13,7 +13,7 @@
         echo "Connection stablished.";
     }
 
-    $sql = "CREATE TABLE `userData`( `UserName` varchar(12) NOT NULL,  `Password` varchar(10), PRIMARY KEY (`UserName`))";
+    $sql = "CREATE TABLE `UserData`( `UserName` varchar(25) NOT NULL,  `Password` varchar(25), PRIMARY KEY (`UserName`))";
 
     if( !(mysqli_query($conn, $sql))){
         echo "error".mysqli_error();
