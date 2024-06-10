@@ -22,7 +22,7 @@
                     <input type="checkbox" name="check" required class="check"> <span>Remember me</span>
                     <a href="#">Forget Password?</a> <br>
                     <input type="submit" value="Login" class="loginBtn"> <br> <br> <br>
-                    <span class="bottomSignup">Don't have an account? <a href="signUp.html" id="SignUpStyle" >SignUp</a></span>
+                    <span class="bottomSignup">Don't have an account? <a href="signUp.php" id="SignUpStyle" >SignUp</a></span>
                 </div>
             </div>
         </div>

@@ -13,9 +13,9 @@
         <h1>Social Networking</h1>
         <p>Connect with the people, learn and share your momments.</p>
         <div>
-            <a href="login.html">Login</a>
+            <a href="login.php">Login</a>
             <span>/</span>
-            <a href="signUp.html">SignUp</a>
+            <a href="signUp.php">SignUp</a>
         </div>
     </div>
 
