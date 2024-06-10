@@ -58,18 +58,20 @@
                 <h1 id="heading">Sign Up </h1>
                 <p>Create your account?.</p>
                 <div class="inputBox">
-                    <input type="text" name="Fname" placeholder="First Name" class="inputStyle"> <span class="error"> <?php echo $error; ?></span>
-                    <input type="text" name="Lname" placeholder="Last Name" class="inputStyle"> <span class="error"> <?php echo $error; ?></span> <br>
-                    <input type="text" name="Email" placeholder="Email" class="inputStyle"> <span class="error"> <?php echo $error; ?></span>
-                    <input type="tel" name="Pnumber" placeholder="phone number" class="inputStyle"> <span class="error"> <?php echo $error; ?></span> <br>
-                    <input type="password" name="Password" placeholder="Password" class="inputStyle"><span class="error"> <?php echo $error; ?></span>
-                    <input type="password" name="Cpassword" placeholder="Confirm Password" class="inputStyle"> <span class="error"> <?php echo $error; ?></span> <br>
-                    <input type="checkbox" name="Check" class="check"> <span class="term&services">i've read and agree with the <b>Terms of Service</b> and our <b>Privacy Policy</b></span>
+                    <input type="text" name="Fname" placeholder="First Name" class="inputStyle"> 
+                    <input type="text" name="Lname" placeholder="Last Name" class="inputStyle">  <br>
+                    <input type="text" name="Email" placeholder="Email" class="inputStyle"> 
+                    <input type="tel" name="Pnumber" placeholder="phone number" class="inputStyle">  <br>
+                    <input type="password" name="Password" placeholder="Password" class="inputStyle">
+                    <input type="password" name="Cpassword" placeholder="Confirm Password" class="inputStyle">  <br>
+                    <input type="checkbox" name="Check" class="check"> <span>i've read and agree with the <b>Terms of Service</b> and our <b>Privacy Policy</b></span>
                     <input type="submit" value="SIGN UP" class="SignupBtn"> <br> <br> <br> <br>
                     <span class="bottomSignup">Already have an account? <a href="login.html" id="LoginStyle" >Login</a></span>
                     </div>
             </div>
         </div>
     </form>
+
+    <script src="javaScriptFiles/signUp.js"></script>
 </body>
 </html>
