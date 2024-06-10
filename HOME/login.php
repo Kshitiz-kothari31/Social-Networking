@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-    
     <form action="" method="POST">
         <div class="container">
             <img src="images/login_page_image.png" alt="this is an image.">
