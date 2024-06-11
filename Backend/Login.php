@@ -1,16 +1,5 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "socialnetwork";
-        
-    //creating the connection.
-    $conn = mysqli_connect($servername, $username, $password, $database);
-        
-    //Checking connection.
-    if( !$conn ){
-        die("Sorry we failed to connect : ".mysqli_connect_error());
-    }
+    include 'Partials/dbconnection.php';
 
     if( $_SERVER["REQUEST_METHOD"] == "POST"){
         $Email = $_POST['email'];

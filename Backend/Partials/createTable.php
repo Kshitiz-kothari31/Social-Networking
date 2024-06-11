@@ -19,7 +19,7 @@
         `Email` VARCHAR(50) UNIQUE NOT NULL,
         `PhoneNumber` VARCHAR(15),
         `Password` VARCHAR(25) NOT NULL,
-        PRIMARY KEY(`PhoneNumber`) 
+        PRIMARY KEY(`Email`) 
     );";
 
     if( !(mysqli_query($conn, $sql))){

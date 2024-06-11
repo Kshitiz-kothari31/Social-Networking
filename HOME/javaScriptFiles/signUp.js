@@ -9,9 +9,6 @@ var btn = document.getElementsByClassName("SignupBtn")[0];
 
 btn.addEventListener("click", function(event){
 
-    console.log(password.value);
-    console.log(ConfirmPassword.value);
-
     if( email.value != "" ){
         checkEmail(email.value);
     }
