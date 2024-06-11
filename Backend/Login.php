@@ -17,34 +17,20 @@
         $Pword = $_POST['password'];
         $RememberMe = isset($_POST['check']) ? $_POST['check'] : '';
         
-        $sql = "SELECT Password FROM usersdata WHERE Email = ?";
+        $sql = "SELECT * FROM users WHERE Email = '$Email' AND Password = '$Pword'";
+        $result = mysqli_query($conn, $sql);
+        $num = mysqli_num_rows($result);
 
-        // Prepare and bind
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("s", $Email);
-        
-        // Execute the statement
-        $stmt->execute();
-        // Store result
-        $stmt->store_result();
-        
-        if( $stmt->num_rows > 0 )
-        {
-            // Bind result variables
-            $stmt->bind_result($db_password);
-            $stmt->fetch();
-
-            if( password_verify($Pword, $db_password)){
-                header("Location: ../HOME/main_home.html");
-                exit();
-            }else{
-                echo '<script>alert("Invalid email or password.");</script>';
-            }
+        if( $num == 1 ){
+            session_start();
+            $_SESSION['loggedin'] = true;
+            $_SESSION['email'] = $Email;
+            header("Location: ../HOME/homePage.html");
+            exit();
         }else{
-            echo '<script>alert("Invalid email or password.");</script>'; 
+            header("Location: ../HOME/login.html");
+            exit();            
         }
-        $stmt->close();
-        $conn->close();
     }
 
 ?>

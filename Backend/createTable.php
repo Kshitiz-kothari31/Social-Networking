@@ -13,7 +13,7 @@
         echo "Connection stablished.";
     }
 
-    $sql = "CREATE TABLE `UsersData` (
+    $sql = "CREATE TABLE `users` (
         `FirstName` VARCHAR(25),
         `LastName` VARCHAR(25),
         `Email` VARCHAR(50) UNIQUE NOT NULL,

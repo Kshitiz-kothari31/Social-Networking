@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.home-header {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.home-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.documentation {
+    padding: 2rem;
+    background: #fff;
+}
+
+.documentation h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.documentation article {
+    margin: 1rem 0;
+}
+
+footer {
+    background: rgb(151, 149, 149);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

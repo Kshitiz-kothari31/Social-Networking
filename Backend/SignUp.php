@@ -20,12 +20,12 @@
         $PrivacyPolicy = $_POST['Check'];
         $Password =  $_POST['Password'];  
 
-        $sql = "INSERT INTO `UsersData`( `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Password`) 
+        $sql = "INSERT INTO `users`( `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Password`) 
             VALUES ('$Fname', '$Lname', '$Email', '$Pnumber', '$Password')";
             
         if(mysqli_query($conn, $sql))
         {
-            header("Location: ../HOME/main_home.html");
+            header("Location: ../HOME/homePage.html");
             exit();
             mysqli_close($conn);
         }else{
