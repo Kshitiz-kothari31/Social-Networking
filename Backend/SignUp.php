@@ -9,6 +9,9 @@
         $PrivacyPolicy = $_POST['Check'];
         $Password =  $_POST['Password'];  
 
+        //storing hash password.
+        $hash = password_hash($Password, PASSWORD_DEFAULT); 
+
         //checking that the users account is already exits or not.
         $exitsSql = "SELECT * FROM `users` WHERE Email = '$Email'";
         $result = mysqli_query($conn, $exitsSql);
@@ -19,7 +22,7 @@
             mysqli_close($conn);
         }else{
             $sql = "INSERT INTO `users`( `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Password`) 
-            VALUES ('$Fname', '$Lname', '$Email', '$Pnumber', '$Password')";
+            VALUES ('$Fname', '$Lname', '$Email', '$Pnumber', '$hash')";
         
             if(mysqli_query($conn, $sql))
             {

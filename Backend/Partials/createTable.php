@@ -18,7 +18,7 @@
         `LastName` VARCHAR(25),
         `Email` VARCHAR(50) UNIQUE NOT NULL,
         `PhoneNumber` VARCHAR(15),
-        `Password` VARCHAR(25) NOT NULL,
+        `Password` VARCHAR(255) NOT NULL,
         PRIMARY KEY(`Email`) 
     );";
 
